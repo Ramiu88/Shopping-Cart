@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.search-btn').addEventListener('click', function() {
+document.querySelector('.search-btn').addEventListener('click', function() {
     const searchInput = document.querySelector('.search-input');
     searchInput.classList.toggle('active');
     if (searchInput.classList.contains('active')) {
@@ -121,5 +120,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   setInterval(updateCountdown, 1000);
-});
+
 
