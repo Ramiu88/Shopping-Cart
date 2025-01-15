@@ -7,20 +7,17 @@
     <meta name="keywords" content="games, gaming, video games, digital games">
     <title>Game Store</title>
     <link rel="stylesheet" href="styles.css">
-    <script scr = "script.js defer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
-
     <nav class="navbar">
         <div class="logo">
-            <img src="./images/logo.jpg" alt="Store Logo">
+            <img src="logo.jpg" alt="Store Logo">
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#store">Store</a></li>
-            <li><a href="#library">Library</a></li>
+            <li><a href=file:///C:/Users/lamha/OneDrive/Desktop/project/library.html#home>Library</a></li>
             <li><a href="#community">Community</a></li>
             <li><a href="#support">Support</a></li>
         </ul>
@@ -34,102 +31,305 @@
         </div>
     </nav>
 
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hollow knight</h1>
+                <p>Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.</p><br>
+                <button class="add-to-cart" data-id="hollow" data-price="29.99">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+        </section>
 
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hollow knight</h1>
-            <p>Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.</p><br>
-            <button class="cta-button">Buy Now</button>
-        </div>
-    </section>
-
-    <section class="featured-deals">
-        <h2>Special Deals</h2>
-        <div class="deals-container">
-            <div class="deal-card">
-                <div class="discount-badge">-70%</div>
-                <img src="./images/elding.jpg" alt="Game Deal">
-                <div class="deal-info">
-                    <h3>Weekend Deal</h3>
-                    <p class="original-price">$59.99</p>
-                    <p class="deal-price">$17.99</p>
-                    <div class="countdown">Ends in: 48:00:00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+        <section id="special-deals">
+            <div class="section-header">
+                <h2>Special Deals</h2>
+                <div class="section-timer">
+                    <i class="fas fa-clock"></i>
+                    <span class="deals-countdown">Ends in: 48:00:00</span>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="deals-grid">
+                <div class="deal-card" data-id="4" data-price="17.99">
+                    <div class="deal-image">
+                        <img src="elding.jpg" alt="Elden Ring">
+                        <div class="discount-badge">-70%</div>
+                        <div class="deal-overlay">
+                            <button class="add-to-cart" data-id="elden" data-price="17.99">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <h3>Elden Ring</h3>
+                        <div class="deal-price">
+                            <span class="original-price">$59.99</span>
+                            <span class="discounted-price">$17.99</span>
+                        </div>
+                        <div class="deal-meta">
+                            <span class="deal-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </span>
+                            <span class="deal-platform">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-steam"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
-    
+                <div class="deal-card" data-id="5" data-price="29.99">
+                    <div class="deal-image">
+                        <img src="cyber.jpeg" alt="Cyberpunk 2077">
+                        <div class="discount-badge">-50%</div>
+                        <div class="deal-overlay">
+                            <button class="add-to-cart" data-id="cyberpunk" data-price="29.99">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <h3>Cyberpunk 2077</h3>
+                        <div class="deal-price">
+                            <span class="original-price">$59.99</span>
+                            <span class="discounted-price">$29.99</span>
+                        </div>
+                        <div class="deal-meta">
+                            <span class="deal-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0</span>
+                            </span>
+                            <span class="deal-platform">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-steam"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="deal-card" data-id="6" data-price="19.99">
+                    <div class="deal-image">
+                        <img src="go.jpg" alt="God of War">
+                        <div class="discount-badge">-60%</div>
+                        <div class="deal-overlay">
+                            <button class="add-to-cart" data-id="gow" data-price="19.99">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <h3>God of War</h3>
+                        <div class="deal-price">
+                            <span class="original-price">$49.99</span>
+                            <span class="discounted-price">$19.99</span>
+                        </div>
+                        <div class="deal-meta">
+                            <span class="deal-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </span>
+                            <span class="deal-platform">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-steam"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal-card" data-id="7" data-price="24.99">
+                    <div class="deal-image">
+                        <img src="village.webp" alt="Resident Evil Village">
+                        <div class="discount-badge">-50%</div>
+                        <div class="deal-overlay">
+                            <button class="add-to-cart" data-id="re-village" data-price="24.99">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <h3>Resident Evil Village</h3>
+                        <div class="deal-price">
+                            <span class="original-price">$49.99</span>
+                            <span class="discounted-price">$24.99</span>
+                        </div>
+                        <div class="deal-meta">
+                            <span class="deal-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7</span>
+                            </span>
+                            <span class="deal-platform">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-steam"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="popular-games">
+            <div class="section-header">
+                <h2>Popular Games</h2>
+                <div class="view-options">
+                    <button class="active">All</button>
+                    <button>New Releases</button>
+                    <button>Top Rated</button>
+                    <button>Most Played</button>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="game-card" data-id="1" data-price="59.99">
+                    <div class="game-image">
+                        <img src="bioshock.jpeg" alt="BioShock infinite">
+                        <div class="game-overlay">
+                            <button class="add-to-cart" data-id="bioshock" data-price="59.99">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>BioShock infinite</h3>
+                        <div class="game-meta">
+                            <span class="game-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </span>
+                            <span class="game-genre">Action, Adventure</span>
+                        </div>
+                        <div class="game-price">
+                            <span class="price">$59.99</span>
+                            <span class="platform-icons">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-steam"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-id="2" data-price="49.99">
+                    <div class="game-image">
+                        <img src="rdr2.webp" alt="Red Dead Redemption 2">
+                        <div class="game-overlay">
+                            <button class="add-to-cart" data-id="rdr2" data-price="49.99">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Red Dead Redemption 2</h3>
+                        <div class="game-meta">
+                            <span class="game-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.8</span>
+                            </span>
+                            <span class="game-genre">Action, Open World</span>
+                        </div>
+                        <div class="game-price">
+                            <span class="price">$49.99</span>
+                            <span class="platform-icons">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-steam"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-id="3" data-price="15.99">
+                    <div class="game-image">
+                        <img src="dog.jpg" alt="The Tweaking Dog">
+                        <div class="game-overlay">
+                            <button class="add-to-cart" data-id="tweaking-dog" data-price="15.99">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>The Tweaking Dog</h3>
+                        <div class="game-meta">
+                            <span class="game-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0</span>
+                            </span>
+                            <span class="game-genre">Adventure, Indie</span>
+                        </div>
+                        <div class="game-price">
+                            <span class="price">$15.99</span>
+                            <span class="platform-icons">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-steam"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive deals and gaming news!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <div id="cart-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Shopping Cart</h2>
-            <div id="cart-items"></div>
-            <div class="cart-total">
-                <h3>Total: $<span id="cart-total">0</span></h3>
-                <button id="checkout-btn">Checkout</button>
+            <div class="modal-header">
+                <h2><i class="fas fa-shopping-cart"></i> Shopping Cart</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div id="cart-items">
+
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    Total: $<span id="cart-total">0.00</span>
+                </div>
+                <button class="checkout-btn">
+                    <i class="fas fa-shopping-bag"></i> Proceed to Checkout
+                </button>
             </div>
         </div>
     </div>
 
-
-    <section class="games-grid">
-        <h2>Popular Games</h2>
-        <div class="grid-container">
-            <div class="game-card" data-id="1" data-price="59.99">
-                <img src="./images/ok.webp" alt="BioShock infinite">
-                <h3>BioShock infinite</h3>
-                <p class="price">$59.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="game-card" data-id="2" data-price="49.99">
-                <img src="./images/rdr2.webp" alt="Hollow Knight">
-                <h3>Red Dead Redemption 2</h3>
-                <p class="price">$49.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="game-card" data-id="2" data-price="49.99">
-                <img src="./images/dog.jpg" alt="Hollow Knight">
-                <h3>the tweaking dog</h3>
-                <p class="price">$49.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-        </div>
-    </section>                    
-
-    <section class="categories">
-        <h2>Browse by Category</h2>
-        <div class="category-container">
-            <div class="category">
-                <i class="fas fa-gamepad"></i>
-                <h3>Action</h3>
-            </div>
-            <div class="category">
-                <i class="fas fa-running"></i>
-                <h3>Adventure</h3>
-            </div>
-            <div class="category">
-                <i class="fas fa-football-ball"></i>
-                <h3>Sports</h3>
-            </div>
-        </div>
-    </section>
-
-    <section class="newsletter">
-        <div class="newsletter-content">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter for exclusive deals and gaming news!</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
+    <button class="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-badge">0</span>
+    </button>
 
     <footer>
         <div class="footer-content">
@@ -162,9 +362,7 @@
             <p>&copy; 2024 Game Store. All rights reserved.</p>
         </div>
     </footer>
-     
-
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="bros.js"></script>
 </body>
 </html>
