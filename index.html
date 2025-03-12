@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGames Store </title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar fade-in">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <ul>
+        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="store.html"><i class="fas fa-store"></i> Store</a></li>
+        <li><a href="library.html"><i class="fas fa-book"></i> Library</a></li>
+        <li><a href="friends.html"><i class="fas fa-users"></i> Friends</a></li>
+      </ul>
+      <div class="sidebar-categories">
+        <h3>BROWSE GAMES</h3>
+        <ul class="category-list">
+          <li><a href="#" data-category="new"><i class="fas fa-star"></i> New Releases <span class="category-badge">12</span></a></li>
+          <li><a href="#" data-category="top"><i class="fas fa-trophy"></i> Top Sellers <span class="category-badge">8</span></a></li>
+          <li><a href="#" data-category="coming"><i class="fas fa-calendar"></i> Coming Soon <span class="category-badge">5</span></a></li>
+          <li><a href="#" data-category="special"><i class="fas fa-tag"></i> Special Offers <span class="category-badge">15</span></a></li>
+          <li><a href="#" data-category="free"><i class="fas fa-gift"></i> Free Games <span class="category-badge">3</span></a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <header class="fade-in">
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search games...">
+          <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-actions">
+          <!-- Header actions will be populated by header.js -->
+        </div>
+      </header>
+      <section id="featured-games" class="carousel slide-in">
+        <!-- Carousel items will be added dynamically -->
+      </section>
+      <section id="game-categories" class="slide-in">
+        <h2>Browse Games</h2>
+        <div class="category-grid">
+          <button class="option-btn" data-category="new"><i class="fas fa-star"></i> New Releases</button>
+          <button class="option-btn" data-category="top"><i class="fas fa-trophy"></i> Top Sellers</button>
+          <button class="option-btn" data-category="coming"><i class="fas fa-calendar"></i> Coming Soon</button>
+          <button class="option-btn" data-category="special"><i class="fas fa-tag"></i> Special Offers</button>
+        </div>
+      </section>
+      <section id="game-list" class="slide-in">
+        <h2>Popular Games</h2>
+        <div class="game-grid">
+          <!-- Game cards will be dynamically added here -->
+        </div>
+        <div class="see-more-container">
+          <button id="see-more-btn" class="see-more-btn">See More</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="fade-in">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Support-A-Creator</a></li>
+          <li><a href="#">Publish on BGames</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Company</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Made By BGames</h3>
+        <ul>
+          <li><a href="#">Battle Breakers</a></li>
+          <li><a href="#">Fortnite</a></li>
+          <li><a href="#">Infinity Blade</a></li>
+          <li><a href="#">Robo Recall</a></li>
+          <li><a href="#">Shadow Complex</a></li>
+          <li><a href="#">Unreal Tournament</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Store Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BGames, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="header.js"></script>
+</body>
+</html>
+

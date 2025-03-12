@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGames- Friends</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="store.html"><i class="fas fa-store"></i> Store</a></li>
+                <li><a href="library.html"><i class="fas fa-book"></i> Library</a></li>
+                <li><a href="friends.html" class="active"><i class="fas fa-users"></i> Friends</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search friends...">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <!-- Header actions will be populated by header.js -->
+                </div>
+            </header>
+            <section id="friends-content">
+                <h1>Friends</h1>
+                <div class="friends-list" id="friends-list">
+                    <!-- Friend cards will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Support-A-Creator</a></li>
+              <li><a href="#">Publish on BGames</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Company</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Made By BGames</h3>
+            <ul>
+              <li><a href="#">Battle Breakers</a></li>
+              <li><a href="#">Fortnite</a></li>
+              <li><a href="#">Infinity Blade</a></li>
+              <li><a href="#">Robo Recall</a></li>
+              <li><a href="#">Shadow Complex</a></li>
+              <li><a href="#">Unreal Tournament</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Store Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 BGames, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+    <script src="friends.js"></script>
+    <script src="header.js"></script>
+</body>
+</html>
+
